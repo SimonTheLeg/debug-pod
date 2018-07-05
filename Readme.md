@@ -5,7 +5,7 @@ Simple pod equipped with networking tools, for debugging purposes. Image can be 
 ## Running inside Kubernetes
 
 ```shell
-kubectl run debug-pod --image=simontheleg/debug-pod:v1.0.0
+kubectl run debug-pod --image=simontheleg/debug-pod:latest
 kubectl exec -it <pod-id> /bin/bash
 ```
 
@@ -18,6 +18,6 @@ kubectl delete deploy debug-pod
 ## Building & publishing
 
 ```shell
-docker build -t simontheleg/debug-pod:v1.0.0 .
-docker push simontheleg/debug-pod:v1.0.0
+docker build -t simontheleg/debug-pod:latest .
+docker push simontheleg/debug-pod:latest
 ```

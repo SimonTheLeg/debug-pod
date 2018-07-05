@@ -5,6 +5,7 @@ LABEL maintainer="simon@codeconductor.io"
 RUN apk add --update \
       bash \
       curl \
+      jq \
     && rm -rf /var/cache/apk/*
 
 # Keep alive forever; tail was used since alpine does not have sleep infinity
