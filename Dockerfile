@@ -7,6 +7,7 @@ RUN apk add --update \
       curl \
       jq \
       busybox-extras \
+      tcpdump \
     && rm -rf /var/cache/apk/*
 
 # Keep alive forever; tail was used since alpine does not have sleep infinity
