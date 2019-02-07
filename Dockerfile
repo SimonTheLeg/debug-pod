@@ -7,6 +7,7 @@ RUN apk add --update \
       curl \
       jq \
       busybox-extras \
+      bind-tools \
       tcpdump \
     && rm -rf /var/cache/apk/*
 
