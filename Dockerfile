@@ -9,6 +9,7 @@ RUN apk add --update \
       busybox-extras \
       bind-tools \
       tcpdump \
+      openssl \
     && rm -rf /var/cache/apk/*
 
 # Keep alive forever; tail was used since alpine does not have sleep infinity
