@@ -8,7 +8,7 @@ Simple pod equipped with networking tools, for debugging purposes. Image can be 
 
 ```shell
 kubectl create deploy debug-pod --image=simontheleg/debug-pod:latest
-kubectl exec -it $(kubectl get pods -o jsonpath="{.items[?(@.metadata.labels.app=='debug-pod')].metadata.name}") /bin/bash
+kubectl exec -it $(kubectl get pods -o jsonpath="{.items[?(@.metadata.labels.app=='debug-pod')].metadata.name}") -- /bin/bash
 ```
 
 clean up
