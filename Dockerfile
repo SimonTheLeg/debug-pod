@@ -11,6 +11,7 @@ RUN apk add --update \
   bash \
   curl \
   jq \
+  yq \
   busybox-extras \
   bind-tools \
   tcpdump \
