@@ -18,4 +18,5 @@ RUN apk add --update \
   && rm -rf /var/cache/apk/*
 
 # Keep alive forever; tail was used since alpine does not have sleep infinity
+# Needed so it stays active when using it inside Kubernetes
 CMD [ "tail", "-f", "/dev/null" ]
