@@ -16,6 +16,7 @@ RUN apk add --update \
   bind-tools \
   tcpdump \
   openssl \
+  kubectl \
   && rm -rf /var/cache/apk/*
 
 # Keep alive forever; tail was used since alpine does not have sleep infinity
