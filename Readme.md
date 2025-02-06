@@ -1,4 +1,4 @@
-<img src =<https://img.shields.io/docker/pulls/simontheleg/debug-pod.svg>>
+<img src =https://img.shields.io/docker/pulls/simontheleg/debug-pod.svg>
 
 # Debug-Pod
 
