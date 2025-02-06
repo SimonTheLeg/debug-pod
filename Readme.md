@@ -1,4 +1,4 @@
-<img src =https://img.shields.io/docker/pulls/simontheleg/debug-pod.svg>
+<img src =<https://img.shields.io/docker/pulls/simontheleg/debug-pod.svg>>
 
 # Debug-Pod
 
@@ -23,6 +23,9 @@ kubectl delete deploy debug-pod
 ## Building & publishing
 
 ```shell
-docker build -t simontheleg/debug-pod:latest .
-docker push simontheleg/debug-pod:latest
+IMG_NAME="docker.io/simontheleg/debug-pod:latest"
+podman image rm $IMG_NAME
+podman manifest create $IMG_NAME
+podman build --platform linux/amd64,linux/arm64  --manifest $IMG_NAME .
+podman manifest push $IMG_NAME
 ```
